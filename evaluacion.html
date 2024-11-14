@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            background-color: rgb(255, 234, 243);   /* Cambia el color de fondo del html*/
+            height: 1000px; /* Cambia su altura*/
+        }
+
+        main {
+            display: flex;  /* Transforma el main en un contenedor flex*/
+            justify-content: center;    /* Centra el contenido */
+        }
+        footer {
+            display: flex;  /* Transforma el footer en un contenedor flex*/
+            justify-content: center;    /* Centra el contenido*/
+            margin-top: 10px;   /* Aplica 10px al margin de arriba*/
+        }
+        .contactar {
+            background-color: rgb(49, 145, 235);    /* Cambia el color de fondo de la clase contactar*/
+            display: flex;  /* Convierte la clase en un contenedor flex*/
+            justify-content: center;    /* Centra el contenido horizontalmente*/
+            align-items: center;    /* Centra el contenido verticalmente*/
+            height: 40px;   /* Cambia el alto*/
+            width: 120px;   /* Cambia el ancho*/
+            border-radius: 25px;    /* Cambia el radio de los bordes (los redondea)*/
+            position: fixed;    /* Fija la posicion del elemento*/
+            div a {
+                margin: 0px;    /* Elimina el margin*/
+                color: white;   /* Cambia el color del texto*/
+                margin-left: 5px;   /* Aplica 5px al margin de la izquierda*/
+            }
+        }
+        .mail {
+            width: 20px;    /* Cambia el ancho de la imagen*/
+            height: 20px;   /* Cambia la altura de la imagen*/
+        }
+
+        section {
+            border: 1px solid rgb(39, 39, 39);  /* Da grosor, visibilidad y color al borde*/
+            background-color: white;    /* Colorea el fondo del section*/
+            padding: 15px;  /* Cambia el padding*/
+            padding-top: 30px;  /* Cambia el padding de arriba unos 30px*/
+        }
+
+        .img_text {
+            width: 600px;   /* Da un ancho al contenedor*/
+            margin-bottom: 40px;    /* Cambia el margin de abajo en unos 40px*/
+        }
+
+        .img {
+            position: relative;     /* Le da una posicion relativa a la caja padre*/
+
+            img {
+                width: 100%;    /* Ajusta la imagen al 100% del contenedor que este*/
+            }
+        }
+
+        .lincenciatura {
+            position: absolute; /* Le da una posicion absoluta absolute a la caja hijo*/
+            top: 305px;     /* Mueve la caja 305px desde arriba*/
+            left: 695px;    /* Mueve la caja 695px desde la izquierda*/
+
+            p span {
+                font-weight: 500;   /* Le da un grosor al texto*/
+                background-color: rgb(49, 145, 235);    /* Colorea el fondo de este*/
+                color: white;   /* Colorea el texto*/
+                padding-left: 10px; /* Da unos 10px al lado izquierdo del padding*/
+                padding-right: 10px; /* Da unos 10px al lado derecho del padding*/
+                margin-bottom: 8px; /* Da unos 8px al margin de abajo*/
+                word-spacing: 5px;  /* Espacia las palabras en unos 5px*/
+            }
+
+            h3 {
+                width: 250px;     /* Cambia el ancho*/
+                color: white;   /* Colorea las letras*/
+                font-size: 25px;    /* Cambia su tamaño*/
+                margin: 0;  /* Elimina el margin*/
+                word-spacing: 3px;  /* Espacia las palabras en unos 3px*/
+            }
+        }
+
+        .tilde {
+            position: absolute;     /* Le da una posicion absoluta a la otra caja hijo*/
+            top: 345px;     /* Mueve la caja 345px desde arriba*/
+            right: 695px;   /* Mueve la caja 695px desde la derecha*/
+        }
+
+        .descripcion {
+            display: flex;  /* Convierte la clase descripcion en un contenedor flex */
+        }
+
+        .penguin {
+            margin-bottom: 15px;    /* Cambia el margin de abajo en unos 15px*/
+        }
+
+        .texto {
+            margin-left: 30px;  /* Cambia el margin izquierdo en unos 30px*/
+
+            h4 {
+                margin-top: 0px;    /* Elimina el margin*/
+                margin-bottom: 10px;    /* Añade unos 10px al margin de abajo*/
+                color: darkblue;    /* Cambia el color de las letras*/
+                font-size: 22px;    /* Cambia el tamaño de las letras*/
+                word-spacing: 3px;  /* Espacia las palabras en unos 3px*/
+                width: 350px;   /* Cambia el ancho*/
+            }
+
+            p {
+                margin-top: 0px;    /* Elimina el margin de arriba*/
+                margin-bottom: 10px;    /* Pone el margin de abajo en unos 10px*/
+                font-weight: 700;   /* Cambia el grosor de la letra*/
+                color: rgb(87, 206, 166);   /* Cambia el color*/
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="img_text"> <!--Clase padre-->
+                <div class="img">
+                    <img src="Areas.png" alt="Areas Naturales">
+                </div>
+                <div class="lincenciatura"> <!--Clase hijo-->
+                    <p><span>LINCENCIATURA EN</span></p>
+                    <h3>Administración de Áreas Naturales</h3>
+                </div>
+                <div class="tilde">  <!--Clase hijo-->
+                    <img src="check.png" alt="Verificado">
+                </div>
+            </div>
+            <div class="descripcion"> 
+                <div>
+                    <div class="penguin">
+                        <img src="penguin.png" alt="Pinguino">
+                    </div>
+                    <div>
+                        <img src="check.png" alt="Verificado">
+                    </div>
+                </div>
+                <div class="texto">
+                    <h4>Lic. en Administración de Áreas Naturales</h4>
+                    <p>Presencial: Pto. Madryn</p>
+                    <p>Duración 5 años</p>
+                    <h4>Tec. Univ. Guardaparques</h4>
+                    <p>Presencial: Pto. Madryn</p>
+                    <p>Duración 3 años</p>
+                </div>
+            </div>
+        </section> 
+        
+    </main>
+    <footer>
+        <button class="contactar">
+            <img class="mail" src="email.png" alt="Mensaje">
+            <div>
+                <a href="">Contactar</a>
+            </div>
+            </button>
+    </footer>
+</body>
+
+</html>
